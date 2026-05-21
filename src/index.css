@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-background: #080808;
+  --color-on-background: #e5e2e1;
+  --color-on-secondary-container: #006051;
+  --color-on-surface: #e5e2e1;
+  --color-secondary: #00E2C1;
+  --color-on-secondary: #00382e;
+  --color-on-surface-variant: #cfc4c5;
+  --color-primary: #ffffff;
+  --color-surface-container-lowest: #0e0e0e;
+  --color-on-tertiary-container: #757575;
+
+  --spacing-gutter: 24px;
+  --spacing-margin-mobile: 16px;
+  --spacing-container-max: 1440px;
+  --spacing-margin-desktop: 48px;
+  --spacing-base: 8px;
+
+  --font-headline-lg: "Manrope", sans-serif;
+  --font-label-sm: "Manrope", sans-serif;
+  --font-body-md: "Manrope", sans-serif;
+  --font-label-md: "Manrope", sans-serif;
+  --font-headline-md: "Manrope", sans-serif;
+  --font-sans: "Manrope", ui-sans-serif, system-ui, sans-serif;
+}
+
+body { 
+  font-family: 'Manrope', sans-serif; 
+  background-color: var(--color-background, #080808); 
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+}
+
+.hero-headline {
+  line-height: 1.0;
+  letter-spacing: -0.02em;
+}
+
+.text-white-45 { 
+  color: rgba(255, 255, 255, 0.45); 
+}
+
+.text-white-35 { 
+  color: rgba(255, 255, 255, 0.35); 
+}
+
+.border-white-06 { 
+  border-color: rgba(255, 255, 255, 0.06); 
+}
