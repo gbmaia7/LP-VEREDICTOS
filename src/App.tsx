@@ -46,7 +46,6 @@ export default function App() {
         <nav className="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop h-full max-w-container-max mx-auto">
           <div className="flex items-center gap-1">
             <span className="text-xl md:text-2xl font-extrabold tracking-tight text-white uppercase">Veredictos</span>
-            <div className="w-1.5 h-1.5 md:w-2 md:h-2 bg-[#00E2C1] shadow-[0_0_8px_#00E2C1]"></div>
           </div>
           <div className="hidden md:flex items-center">
             <span className="text-[11px] md:text-[12px] uppercase tracking-[0.1em] md:tracking-[0.2em] font-medium text-white/70">Uma nova camada de inteligência para o SUS</span>
@@ -1048,7 +1047,6 @@ export default function App() {
           <div className="flex flex-col items-center md:items-start text-center md:text-left gap-2">
             <div className="flex items-center gap-1.5 mb-1">
               <span className="font-headline-md text-[14px] md:text-[16px] font-extrabold text-white uppercase tracking-tight">Veredictos</span>
-              <div className="w-1.5 h-1.5 md:w-2 md:h-2 bg-[#00E2C1] shadow-[0_0_8px_#00E2C1]"></div>
             </div>
             <span className="text-[14px] text-white/50 font-light tracking-wide">
               © 2026 Tecnologia para priorização clínica em saúde pública.
