@@ -15,8 +15,8 @@
 
   --spacing-gutter: 24px;
   --spacing-margin-mobile: 16px;
-  --spacing-container-max: 1440px;
-  --spacing-margin-desktop: 48px;
+  --spacing-container-max: 1152px;
+  --spacing-margin-desktop: 40px;
   --spacing-base: 8px;
 
   --font-headline-lg: "Manrope", sans-serif;

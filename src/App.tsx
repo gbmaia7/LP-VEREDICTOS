@@ -477,7 +477,7 @@ export default function App() {
                </div>
 
                {/* Comparison Slider Component */}
-               <div className="relative w-full aspect-square md:aspect-[4/3] rounded-2xl overflow-hidden group border border-white/10 shadow-[0_0_40px_rgba(0,0,0,0.5)] cursor-ew-resize select-none bg-[#050505]">
+               <div className="relative w-full aspect-square md:aspect-[4/3] rounded-2xl overflow-hidden group border border-white/10 shadow-[0_0_40px_rgba(0,0,0,0.5)] cursor-ew-resize select-none bg-[#050505] touch-none">
                  
                  {/* Analyzed Image (Right side revealed) */}
                  <img 
@@ -503,12 +503,12 @@ export default function App() {
                      max="100" 
                      value={sliderValue} 
                      onChange={(e) => setSliderValue(Number(e.target.value))}
-                     className="absolute inset-0 w-full h-full opacity-0 cursor-ew-resize z-30" 
+                     className="absolute inset-0 w-full h-full opacity-0 cursor-ew-resize z-30 touch-none" 
                    />
                    
                    {/* Visible Handle Line */}
                    <div 
-                     className="absolute top-0 bottom-0 w-[2px] bg-white/70 shadow-[0_0_15px_rgba(0,0,0,1)] flex items-center justify-center pointer-events-none transition-all duration-75"
+                     className="absolute top-0 bottom-0 w-[2px] bg-white/70 shadow-[0_0_15px_rgba(0,0,0,1)] flex items-center justify-center pointer-events-none"
                      style={{ left: `${sliderValue}%`, transform: 'translateX(-50%)' }}
                    >
                      {/* Grabber Button */}
@@ -574,16 +574,16 @@ export default function App() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-24">
             
             {/* Card: Urgent */}
-            <div className="bg-[#141414] border border-[#f87171]/20 rounded-2xl p-6 flex flex-col relative overflow-hidden group hover:border-[#f87171]/40 transition-colors shadow-[0_0_30px_rgba(248,113,113,0.03)] hover:shadow-[0_0_40px_rgba(248,113,113,0.08)]">
+            <div className="bg-[#141414] border border-[#f87171]/20 rounded-2xl p-5 md:p-6 flex flex-col relative overflow-hidden group hover:border-[#f87171]/40 transition-colors shadow-[0_0_30px_rgba(248,113,113,0.03)] hover:shadow-[0_0_40px_rgba(248,113,113,0.08)]">
               <div className="absolute top-0 right-0 w-24 h-24 bg-[#f87171]/10 blur-[40px] rounded-full"></div>
-              <div className="flex items-center gap-3 mb-6">
+              <div className="flex items-center gap-3 mb-4 md:mb-6">
                 <span className="w-3 h-3 rounded-full bg-[#f87171] shadow-[0_0_10px_rgba(248,113,113,0.8)] animate-pulse"></span>
                 <span className="text-[#f87171] font-bold tracking-widest uppercase text-[11px]">Urgente</span>
               </div>
               <p className="text-[14px] text-white/80 font-medium mb-2 min-h-[42px]">
                 Risco elevado de progressão da doença
               </p>
-              <p className="text-[13px] text-white/50 mb-8 pb-6 border-b border-white/5">
+              <p className="text-[13px] text-white/50 mb-4 pb-4 md:mb-8 md:pb-6 border-b border-white/5">
                 Encaminhamento recomendado em até <strong className="text-white">7-15 dias</strong>.
               </p>
               
@@ -598,16 +598,16 @@ export default function App() {
             </div>
 
             {/* Card: Proritary */}
-            <div className="bg-[#141414] border border-[#fb923c]/20 rounded-2xl p-6 flex flex-col relative overflow-hidden group hover:border-[#fb923c]/40 transition-colors shadow-[0_0_30px_rgba(251,146,60,0.03)] hover:shadow-[0_0_40px_rgba(251,146,60,0.08)]">
+            <div className="bg-[#141414] border border-[#fb923c]/20 rounded-2xl p-5 md:p-6 flex flex-col relative overflow-hidden group hover:border-[#fb923c]/40 transition-colors shadow-[0_0_30px_rgba(251,146,60,0.03)] hover:shadow-[0_0_40px_rgba(251,146,60,0.08)]">
               <div className="absolute top-0 right-0 w-24 h-24 bg-[#fb923c]/10 blur-[40px] rounded-full"></div>
-              <div className="flex items-center gap-3 mb-6">
+              <div className="flex items-center gap-3 mb-4 md:mb-6">
                 <span className="w-3 h-3 rounded-full bg-[#fb923c] shadow-[0_0_10px_rgba(251,146,60,0.6)]"></span>
                 <span className="text-[#fb923c] font-bold tracking-widest uppercase text-[11px]">Prioritário</span>
               </div>
               <p className="text-[14px] text-white/80 font-medium mb-2 min-h-[42px]">
                 Alterações relevantes com necessidade de avaliação especializada
               </p>
-              <p className="text-[13px] text-white/50 mb-8 pb-6 border-b border-white/5">
+              <p className="text-[13px] text-white/50 mb-4 pb-4 md:mb-8 md:pb-6 border-b border-white/5">
                 Encaminhamento recomendado em até <strong className="text-white">30-60 dias</strong>.
               </p>
               
@@ -622,16 +622,16 @@ export default function App() {
             </div>
 
             {/* Card: Moderate */}
-            <div className="bg-[#141414] border border-[#fbbf24]/20 rounded-2xl p-6 flex flex-col relative overflow-hidden group hover:border-[#fbbf24]/40 transition-colors shadow-[0_0_30px_rgba(251,191,36,0.03)] hover:shadow-[0_0_40px_rgba(251,191,36,0.08)]">
+            <div className="bg-[#141414] border border-[#fbbf24]/20 rounded-2xl p-5 md:p-6 flex flex-col relative overflow-hidden group hover:border-[#fbbf24]/40 transition-colors shadow-[0_0_30px_rgba(251,191,36,0.03)] hover:shadow-[0_0_40px_rgba(251,191,36,0.08)]">
               <div className="absolute top-0 right-0 w-24 h-24 bg-[#fbbf24]/10 blur-[40px] rounded-full"></div>
-              <div className="flex items-center gap-3 mb-6">
+              <div className="flex items-center gap-3 mb-4 md:mb-6">
                 <span className="w-3 h-3 rounded-full bg-[#fbbf24] shadow-[0_0_10px_rgba(251,191,36,0.6)]"></span>
                 <span className="text-[#fbbf24] font-bold tracking-widest uppercase text-[11px]">Moderado</span>
               </div>
               <p className="text-[14px] text-white/80 font-medium mb-2 min-h-[42px]">
                 Sinais iniciais ou progressão controlada. Acompanhamento programado.
               </p>
-              <p className="text-[13px] text-white/50 mb-8 pb-6 border-b border-white/5">
+              <p className="text-[13px] text-white/50 mb-4 pb-4 md:mb-8 md:pb-6 border-b border-white/5">
                 Encaminhamento recomendado em até <strong className="text-white">60-90 dias</strong>.
               </p>
               
@@ -646,16 +646,16 @@ export default function App() {
             </div>
 
             {/* Card: Routine */}
-            <div className="bg-[#141414] border border-[#10b981]/20 rounded-2xl p-6 flex flex-col relative overflow-hidden group hover:border-[#10b981]/40 transition-colors shadow-[0_0_30px_rgba(16,185,129,0.03)] hover:shadow-[0_0_40px_rgba(16,185,129,0.08)]">
+            <div className="bg-[#141414] border border-[#10b981]/20 rounded-2xl p-5 md:p-6 flex flex-col relative overflow-hidden group hover:border-[#10b981]/40 transition-colors shadow-[0_0_30px_rgba(16,185,129,0.03)] hover:shadow-[0_0_40px_rgba(16,185,129,0.08)]">
               <div className="absolute top-0 right-0 w-24 h-24 bg-[#10b981]/10 blur-[40px] rounded-full"></div>
-              <div className="flex items-center gap-3 mb-6">
+              <div className="flex items-center gap-3 mb-4 md:mb-6">
                 <span className="w-3 h-3 rounded-full bg-[#10b981] shadow-[0_0_10px_rgba(16,185,129,0.5)]"></span>
                 <span className="text-[#10b981] font-bold tracking-widest uppercase text-[11px]">Rotina</span>
               </div>
               <p className="text-[14px] text-white/80 font-medium mb-2 min-h-[42px]">
                 Ausência de alterações significativas identificadas
               </p>
-              <p className="text-[13px] text-white/50 mb-8 pb-6 border-b border-white/5">
+              <p className="text-[13px] text-white/50 mb-4 pb-4 md:mb-8 md:pb-6 border-b border-white/5">
                 Encaminhamento recomendado em até <strong className="text-white">90-120 dias</strong>.
               </p>
               
