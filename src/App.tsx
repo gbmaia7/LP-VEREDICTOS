@@ -49,7 +49,7 @@ export default function App() {
             <span className="text-xl md:text-2xl font-extrabold tracking-tight text-white uppercase">Veredictos Vision</span>
           </div>
           <div className="hidden md:flex items-center">
-            <span className="text-[11px] md:text-[12px] uppercase tracking-[0.1em] md:tracking-[0.2em] font-medium text-white/70">Uma nova camada de inteligência para o SUS</span>
+            <span className="text-[11px] md:text-[12px] uppercase tracking-[0.1em] md:tracking-[0.2em] font-medium text-white/70">Uma nova camada de inteligência oftalmológica para o SUS</span>
           </div>
         </nav>
       </header>
@@ -66,7 +66,7 @@ export default function App() {
               <div className="h-[1px] w-8 md:w-12 bg-[#00E2C1]/30"></div>
             </div>
             <h1 className="text-[38px] leading-[1.1] md:text-[56px] md:leading-[1] font-extrabold text-white mb-5 md:mb-6 tracking-tight max-w-[620px]">
-              Inteligência Artificial para <span className="text-[#00E2C1]">Triagem Oftalmológica</span> e Prevenção de Cegueira
+              Inteligência artificial para <span className="text-[#00E2C1]">priorização de fila e prevenção de cegueira</span> no SUS
             </h1>
             <p className="text-[14px] md:text-[16px] text-white/40 leading-relaxed mb-6 max-w-[500px]">
               Tecnologia integrada ao SUS que analisa retinografias para detectar glaucoma e retinopatias. Acelera o atendimento dos pacientes mais graves e otimiza o custo público com tratamentos preventivos.
@@ -74,11 +74,15 @@ export default function App() {
             <div className="flex flex-col gap-3 mb-8 md:mb-10">
               <div className="flex items-center gap-2">
                 <span className="material-symbols-outlined text-[#00E2C1] text-lg">check_circle</span>
-                <span className="text-white/80 text-[13px] md:text-[14px]">Mais velocidade para casos urgentes</span>
+                <span className="text-white/80 text-[13px] md:text-[14px]">Mais visões salvas a tempo</span>
               </div>
               <div className="flex items-center gap-2">
                 <span className="material-symbols-outlined text-[#00E2C1] text-lg">check_circle</span>
-                <span className="text-white/80 text-[13px] md:text-[14px]">Mais eficiência para a rede pública</span>
+                <span className="text-white/80 text-[13px] md:text-[14px]">Mais economia ao evitar tratamentos tardios</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="material-symbols-outlined text-[#00E2C1] text-lg">check_circle</span>
+                <span className="text-white/80 text-[13px] md:text-[14px]">Mais eficiência para a saúde pública</span>
               </div>
             </div>
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 sm:gap-6 w-full sm:w-auto">
